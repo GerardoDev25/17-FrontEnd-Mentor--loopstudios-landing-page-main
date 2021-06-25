@@ -38,42 +38,383 @@
       <title>Frontend Mentor | Loopstudios landing page</title>
    </head>
    <body>
-      <!-- About
-  Careers
-  Events
-  Products
-  Support
+      <!-- ************************************* -->
+      <!-- ? ************** header ************** -->
+      <!-- ************************************* -->
 
-  Immersive experiences that deliver
+      <header class="header">
+         <!-- ************************************* -->
+         <!-- ? *********** header__top *********** -->
+         <div class="header__top">
+            <a href="#" class="header__logo"
+               ><img
+                  src="./images/logo.svg"
+                  alt="logo"
+                  class="header__img img"
+            /></a>
 
-  The leader in interactive VR
+            <div class="header__open">
+               <img
+                  src="./images/icon-hamburger.svg"
+                  alt="icon-hamburger"
+               />
+            </div>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+            <!-- ? ************** navBar ************** -->
+            <nav class="nav">
+               <div class="nav__closet">
+                  <img src="./images/icon-close.svg" alt="" />
+               </div>
 
-  Our creations
+               <ul class="nav__container">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Careers</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Events</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Products</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Support</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
 
-  See all
+         <!-- ************************************* -->
+         <!-- ? *********** header__down *********** -->
+         <div class="header__down">
+            <h1 class="header_title">
+               Immersive experiences that deliver
+            </h1>
+         </div>
+      </header>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+      <!-- ************************************* -->
+      <!-- ? *************** main *************** -->
+      <!-- ************************************* -->
+      <main class="main">
+         <!-- ************************************* -->
+         <!-- ? ************ main__top ************ -->
+         <article class="top">
+            <div class="top__image">
+               <picture class="top__container">
+                  <source
+                     srcset="
+                        ./images/mobile/image-interactive.jpg
+                     "
+                     media="(max-width:677px)"
+                     class="top__amage"
+                  />
+                  <img
+                     src="./images/desktop/image-interactive.jpg"
+                     alt=""
+                     class="top__img"
+                  />
+               </picture>
+            </div>
+            <div class="top__text">
+               <h2 class="top__title">
+                  The leader in interactive VR
+               </h2>
+               <p class="top__paragraph">
+                  Founded in 2011, Loopstudios has been producing
+                  world-class virtual reality projects for some
+                  of the best companies around the globe. Our
+                  award-winning creations have transformed
+                  businesses through digital experiences that
+                  bind to their brand.
+               </p>
+            </div>
+         </article>
 
-  About
-  Careers
-  Events
-  Products
-  Support
+         <!-- ************************************* -->
+         <!-- ? ********** main__sections ********** -->
+         <div class="sections">
+            <!-- ? ********* articles__header ********* -->
 
-  © 2021 Loopstudios. All rights reserved. -->
+            <div class="sections__header">
+               <h2 class="sections__title">Our creations</h2>
+               <button class="sections__btn">See all</button>
+            </div>
 
-  <script src="script.js"></script>
+            <!-- ? ********** articles__body ********** -->
+
+            <div class="sections__body">
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-deep-earth.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-deep-earth.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        Deep earth
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-night-arcade.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-night-arcade.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        Night arcade
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-soccer-team.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-soccer-team.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        Soccer team VR
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-grid.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-grid.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        The grid
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-from-above.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-from-above.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        From up above VR
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-pocket-borealis.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-pocket-borealis.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        Pocket borealis
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-curiosity.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-curiosity.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        The curiosity
+                     </figcaption>
+                  </figure>
+               </section>
+
+               <!-- ? section -->
+
+               <section class="section">
+                  <figure class="section__main">
+                     <picture class="section__container">
+                        <source
+                           srcset="
+                              ./images/mobile/image-fisheye.jpg
+                           "
+                           media="(max-width:677px)"
+                           class="section__amage"
+                        />
+                        <img
+                           src="./images/desktop/image-fisheye.jpg"
+                           alt=""
+                           class="section__img"
+                        />
+                     </picture>
+                     <figcaption class="section__description">
+                        Make it fisheye
+                     </figcaption>
+                  </figure>
+               </section>
+            </div>
+         </div>
+      </main>
+
+      <!-- ************************************* -->
+      <!-- ? ************* footer ************* -->
+      <!-- ************************************* -->
+
+      <footer class="footer">
+         <!-- ************************************* -->
+         <!-- ? ********** footer__left ********** -->
+
+         <div class="footer__left">
+            <!-- ? ********* footer__logo ********* -->
+
+            <a href="#" class="header__logo"
+               ><img
+                  src="./images/logo.svg"
+                  alt="logo"
+                  class="header__img img"
+            /></a>
+
+            <!-- ? ********* footer__links ********* -->
+
+            <ul class="footer__links">
+               <li class="footer__item">
+                  <a href="#" class="footer__link">About</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link">Careers</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link">Events</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link">Products</a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link">Support</a>
+               </li>
+            </ul>
+         </div>
+
+         <!-- ************************************* -->
+         <!-- ? ********** footer__right ********** -->
+         <div class="footer__right">
+            <div class="footer__icons">
+               <a href="#" class="icon">
+                  <img
+                     src="./images/icon-facebook.svg"
+                     alt="icon-facebook"
+                     class="icon__img"
+                  /> </a
+               ><a href="#" class="icon">
+                  <img
+                     src="./images/icon-twitter.svg"
+                     alt="icon-twitter"
+                     class="icon__img"
+                  /> </a
+               ><a href="#" class="icon">
+                  <img
+                     src="./images/icon-pinterest.svg"
+                     alt="icon-pinterest"
+                     class="icon__img"
+                  /> </a
+               ><a href="#" class="icon">
+                  <img
+                     src="./images/icon-instagram.svg"
+                     alt="icon-instagram"
+                     class="icon__img"
+                  />
+               </a>
+            </div>
+            <p class="footer__copyright">
+               &copy; 2021 Loopstudios. All rights reserved.
+            </p>
+         </div>
+      </footer>
+      <script src="script.js"></script>
    </body>
 </html>

@@ -85,14 +85,14 @@ figcaption {
    left: 0;
    right: 0;
    top: 0;
-   height: 100vh;
+   height: 110vh;
 
    padding: 2rem;
 
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   transform: translateY(-100vh);
+   transform: translateY(-110vh);
 }
 
 .nav-show {
@@ -101,7 +101,7 @@ figcaption {
 }
 .nav-hidden {
    transition: transform 0.2s ease-in-out;
-   transform: translateY(-100vh);
+   transform: translateY(-110vh);
 }
 
 .nav__top {

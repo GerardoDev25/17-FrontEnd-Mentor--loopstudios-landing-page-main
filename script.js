@@ -7,9 +7,9 @@ hamburger.addEventListener("click", () => {
 });
 
 nav.addEventListener("click", (e) => {
-   console.log(e);
+   e.stopPropagation();
    if (
-      e.target.classList.contains("nav__closet") ||
+      e.target.classList.contains("img") ||
       e.target.classList.contains("nav__link")
    ) {
       nav.classList.remove("nav-show");

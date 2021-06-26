@@ -54,7 +54,7 @@
                   class="header__img img"
             /></a>
 
-            <div class="header__open">
+            <div class="header__open" id="hamburger">
                <img
                   src="./images/icon-hamburger.svg"
                   alt="icon-hamburger img"
@@ -62,10 +62,18 @@
             </div>
 
             <!-- ? ************** navBar ************** -->
-            <nav class="nav">
-               <div class="nav__closet">
-                  <img src="./images/icon-close.svg" alt="" /
-                  class="img">
+            <nav class="nav" id="nav">
+               <div class="nav__top">
+                  <a href="#" class="nav__logo"
+                     ><img
+                        src="./images/logo.svg"
+                        alt="logo"
+                        class="nav__img img"
+                  /></a>
+                  <div class="nav__closet">
+                     <img src="./images/icon-close.svg" alt="" /
+                     class="img">
+                  </div>
                </div>
 
                <ul class="nav__container">
@@ -236,7 +244,9 @@
                            class="section__img img"
                         />
                      </picture>
-                     <figcaption class="section__description grid">
+                     <figcaption
+                        class="section__description grid"
+                     >
                         The grid
                      </figcaption>
                   </figure>

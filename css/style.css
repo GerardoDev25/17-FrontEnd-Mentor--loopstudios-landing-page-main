@@ -307,4 +307,200 @@ figcaption {
 /* ? ************* Desktop *************  */
 /* *************************************  */
 
+@media screen and (min-width: 768px) {
+   .header,
+   .main,
+   .footer {
+      padding-left: 9%;
+      padding-right: 9%;
+      margin-bottom: 7rem;
+   }
 
+   /* *************************************  */
+   /* ? ************* header *************  */
+   /* *************************************  */
+
+   .header {
+      background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)
+         ),
+         url("../images/desktop/image-hero.jpg");
+      height: 85vh;
+   }
+   .header__top {
+      width: 100%;
+      align-items: center;
+   }
+   .header__open {
+      display: none;
+   }
+
+   .nav {
+      position: static;
+      transform: translate(0);
+
+      height: auto;
+      margin-left: auto;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      background-color: transparent;
+
+      padding-bottom: 1rem;
+   }
+
+   .nav__top {
+      display: none;
+   }
+
+   .nav__container {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+   }
+
+   .nav__link {
+      font-size: 1rem;
+      text-transform: capitalize;
+   }
+   .nav__link:hover {
+      border-bottom: 1px solid white;
+   }
+
+   .header__down {
+      width: 45%;
+      margin-right: auto;
+      /* margin-left: auto; */
+   }
+
+   .header_title {
+      font-size: 4rem;
+      padding: 2rem;
+   }
+
+   /* *************************************  */
+   /* ? *************** main ***************  */
+   /* *************************************  */
+
+   .main {
+      text-align: left;
+   }
+
+   .top {
+      position: relative;
+      min-height: 20rem;
+   }
+
+   .top__image {
+      width: 70%;
+   }
+   .top__text {
+      position: absolute;
+      width: 50%;
+      padding-top: 3rem;
+      padding-left: 3rem;
+      padding-bottom: 0;
+      padding-right: 0;
+      bottom: 0;
+      right: 0;
+      background-color: white;
+   }
+
+   .top__title {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      width: 70%;
+      font-size: 1.85rem;
+   }
+   .top__paragraph {
+      line-height: 130%;
+      margin-bottom: 0;
+      padding-right: 5rem;
+   }
+
+   .sections {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .sections__btn {
+      order: 0;
+      padding: 0.6rem 3rem;
+
+      font-size: 1.1rem;
+   }
+
+   .sections__btn:hover {
+      color: white;
+      background-color: var(--Black);
+      cursor: pointer;
+      transition: background-color, color 0.2s ease;
+   }
+   .sections__body {
+      width: 100%;
+      display: grid;
+      gap: 2rem;
+      grid-auto-rows: 450px;
+      grid-template-columns: repeat(
+         auto-fill,
+         minmax(256px, 1fr)
+      );
+   }
+
+   .section__description {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      color: var(--White);
+      font-size: 2rem;
+   }
+
+   .section__description-100 {
+      width: 70%;
+   }
+   /* *************************************  */
+   /* ? ************* footer *************  */
+   /* *************************************  */
+
+   .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 25vh;
+      padding-top: 0;
+      padding-bottom: 0;
+      align-items: center;
+      margin-bottom: 0;
+   }
+   .footer__left {
+      margin-top: 0;
+      height: 50%;
+      width: 50%;
+      max-width: 25rem;
+      text-align: left;
+   }
+
+   .footer__right {
+      height: 50%;
+
+      width: 50%;
+      max-width: 25rem;
+      align-items: right;
+   }
+
+   .footer__icons {
+      margin-left: auto;
+   }
+
+   .footer__copyright {
+      margin-left: auto;
+   }
+
+   .footer__links {
+      flex-direction: row;
+      margin: 0;
+   }
+}
